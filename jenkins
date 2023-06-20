@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage("checkout"){
       steps{
-        git 'https://github.com/shivaindukuri/maven-hello-world-test.git'
+        checkout scm
       }
     }
     stage("Build"){
